@@ -1,0 +1,5 @@
+C:\Users\dave\OneDrive - University of Lincoln\Comp Sci Degree Master\Algorithms & Complexity\assessment\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\ConsoleApp3.csproj.AssemblyReference.cache
+C:\Users\dave\OneDrive - University of Lincoln\Comp Sci Degree Master\Algorithms & Complexity\assessment\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\ConsoleApp3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dave\OneDrive - University of Lincoln\Comp Sci Degree Master\Algorithms & Complexity\assessment\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\ConsoleApp3.AssemblyInfoInputs.cache
+C:\Users\dave\OneDrive - University of Lincoln\Comp Sci Degree Master\Algorithms & Complexity\assessment\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\ConsoleApp3.AssemblyInfo.cs
+C:\Users\dave\OneDrive - University of Lincoln\Comp Sci Degree Master\Algorithms & Complexity\assessment\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\ConsoleApp3.csproj.CoreCompileInputs.cache
