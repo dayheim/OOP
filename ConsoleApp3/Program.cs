@@ -35,11 +35,13 @@ namespace CMP1903M_A01_2223
 
     class Pack
     {
-        List<Card> pack = new List<Card>();
+        static List<Card> pack = new List<Card>();
         public static int currentCard = 0;
 
 
         public Pack()
+
+        //iterates over the ranks and suits to create a 4*13 card pack, 52 cards.
         {
 
             int[] ranks = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
@@ -53,6 +55,7 @@ namespace CMP1903M_A01_2223
                 }
             }
 
+            //displays each card unshuffled.
             foreach (Card card in pack)
             {
                 Console.WriteLine(card);
@@ -60,14 +63,18 @@ namespace CMP1903M_A01_2223
             //Initialise the card pack here
         }
 
+
+        /// <summary>
+        // wtf am i doin w/ my life help me
+        /// </summary>
+        /// <param name="typeOfShuffle"></param>
         public void shuffleCardPack(int typeOfShuffle)
         {
             //Shuffles the pack based on the type of shuffle
-            if (typeOfShuffle == 1)
             {
                 Random rnd = new Random();
 
-                for (int n = pack.Count - 1; n > 0; --n)
+                for (int n = pack.Count() - 1; n > 0; --n)
                 {
 
                     int k = rnd.Next(n + 1);
@@ -77,30 +84,34 @@ namespace CMP1903M_A01_2223
                     pack[k] = temp;
 
                 }
+
             }
-            else
+        }
+
+            public static Card deal()
             {
-                
+                //Deals one card
+                Card card = pack[currentCard];
+                currentCard++;
+                return card;
+
+
             }
-        }
-
-
-        public static Card deal()
-        {
-            //Deals one card
-            Card card = pack[currentCard];
-            return card;
-
-
-        }
-        public static List<Card> dealCard(int amount)
-        {
-            //Deals the number of cards specified by 'amount'
+            public static void dealCard(int amount)
+            {
+            if (currentCard < amount)
+            {
+                Console.WriteLine("Error: Not enough cards left in pack. Printing remainder instead...");
+            }
+                //Deals the number of cards specified by 'amount'
+               
             for (int i = 0; i < amount; i++)
-            {
-
+             {
+                Card card = pack[currentCard];
+                currentCard++;
+                Console.WriteLine(card);
+            }
             }
         }
-    }
 
-}
+    }
