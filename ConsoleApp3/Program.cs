@@ -11,6 +11,7 @@ namespace CMP1903M_A01_2223
         static void Main(string[] args)
         {
             Pack pack = new Pack();
+
         }
     }
     class Card
@@ -35,8 +36,10 @@ namespace CMP1903M_A01_2223
 
     class Pack
     {
-        static List<Card> pack = new List<Card>();
-        public static int currentCard = 0;
+        public static List<Card> pack = new List<Card>();
+        
+        
+        
 
 
         public Pack()
@@ -62,15 +65,12 @@ namespace CMP1903M_A01_2223
             }
             //Initialise the card pack here
         }
+        public static int currentCard = 0;
 
-
-        /// <summary>
-        // wtf am i doin w/ my life help me
-        /// </summary>
-        /// <param name="typeOfShuffle"></param>
         public void shuffleCardPack(int typeOfShuffle)
         {
             //Shuffles the pack based on the type of shuffle
+            //Yates shuffle
             {
                 Random rnd = new Random();
 
@@ -84,6 +84,15 @@ namespace CMP1903M_A01_2223
                     pack[k] = temp;
 
                 }
+                // riffle shuffle.
+            {
+                    int half = pack.Count / 2;
+
+                    for (int i = 0; i < half; i++)
+                    {
+
+                    }
+            }
 
             }
         }
